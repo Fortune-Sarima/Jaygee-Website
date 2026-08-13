@@ -1,0 +1,159 @@
+.product-card {
+  min-width: 0;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #f5f2f0;
+}
+
+.product-image-gallery {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.product-image-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.product-image-gallery img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.025);
+}
+
+.product-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+
+.product-status {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 7px 11px;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-info {
+  padding: 18px 2px 0;
+}
+
+.product-info h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.product-description {
+  margin: 7px 0 14px;
+  color: #777;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-price {
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.product-sizes {
+  color: #777;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+
+.product-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.product-heading h3 {
+  margin: 0;
+}
+
+.availability {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.availability.available {
+  color: #4f6b50;
+}
+
+.availability.unavailable {
+  color: #999;
+}
+
+.order-button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 13px 18px;
+
+  border: 1px solid #222;
+  background: #222;
+
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.order-button:hover {
+  background: transparent;
+  color: #222;
+}
+
+.order-button:disabled {
+  border-color: #ddd;
+  background: #eee;
+  color: #999;
+  cursor: not-allowed;
+}

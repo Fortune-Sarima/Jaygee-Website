@@ -1,0 +1,196 @@
+/* ================================
+   BRAND WORLDS
+================================ */
+
+.brand-worlds {
+  width: 100%;
+  padding: 8rem 2rem;
+
+  background-color: var(--white);
+}
+
+/* Heading */
+
+.brand-worlds-heading {
+  max-width: 700px;
+
+  margin: 0 auto 4rem;
+
+  text-align: center;
+}
+
+.brand-worlds-eyebrow {
+  margin-bottom: 1.25rem;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+
+  color: var(--orange);
+}
+
+.brand-worlds-heading h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 500;
+
+  color: var(--black);
+}
+
+/* Cards */
+
+.brand-worlds-grid {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1.5rem;
+}
+
+.brand-world-card {
+  position: relative;
+
+  min-height: 650px;
+
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+/* Images */
+
+.couture-card {
+  background-image: url("/public/images/worlds/C2 (2).jpg");
+}
+
+.design-card {
+  background-image: url("/public/images/worlds/R1 (2).jpg");
+}
+
+/* Overlay */
+
+.brand-world-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 3rem;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.25) 55%,
+    transparent 100%
+  );
+
+  color: var(--white);
+}
+
+/* Content */
+
+.brand-world-content {
+  max-width: 450px;
+}
+
+.brand-world-label {
+  margin-bottom: 0.75rem;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.brand-world-content h3 {
+  margin-bottom: 1rem;
+
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 500;
+}
+
+.brand-world-content p:not(.brand-world-label) {
+  margin-bottom: 1.5rem;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.brand-world-content a {
+  display: inline-block;
+
+  padding-bottom: 0.4rem;
+
+  border-bottom: 1px solid var(--white);
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  color: var(--white);
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.brand-world-content a:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
+/* Hover */
+
+.brand-world-card {
+  transition: transform 0.5s ease;
+}
+
+.brand-world-card:hover {
+  transform: scale(0.99);
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+  .brand-worlds {
+    padding: 6rem 1.5rem;
+  }
+
+  .brand-worlds-grid {
+    gap: 1rem;
+  }
+
+  .brand-world-card {
+    min-height: 550px;
+  }
+
+  .brand-world-overlay {
+    padding: 2rem;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .brand-worlds {
+    padding: 5rem 1.5rem;
+  }
+
+  .brand-worlds-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-world-card {
+    min-height: 550px;
+  }
+}

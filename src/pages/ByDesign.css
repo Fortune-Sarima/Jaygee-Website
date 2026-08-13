@@ -1,0 +1,245 @@
+.by-design {
+  padding-top: 78px;
+  background: #fff;
+  color: #222;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.by-design-hero {
+  position: relative;
+  min-height: calc(100vh - 78px);
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.by-design-hero-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  z-index: 0;
+}
+
+.by-design-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.32);
+
+  z-index: 1;
+}
+
+.by-design-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(700px, 90%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #fff;
+}
+
+.by-design-hero .eyebrow {
+  margin: 0 0 18px;
+
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  /* color: var(--orange); */
+}
+
+.by-design-hero h1 {
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.hero-description {
+  max-width: 520px;
+  margin: 24px auto 0;
+
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.explore-button {
+  margin-top: 34px;
+
+  padding: 13px 22px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  background: transparent;
+  border: 1px solid #fff;
+
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.explore-button span {
+  font-size: 1rem;
+
+  transition: transform 0.3s ease;
+}
+
+.explore-button:hover {
+  background: #fff;
+  color: #222;
+}
+
+.explore-button:hover span {
+  transform: translateY(3px);
+}
+
+/* =========================
+   COLLECTION
+========================= */
+
+.collection-intro {
+  max-width: 700px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.collection-intro h2 {
+  margin: 12px 0 18px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+}
+
+.collection-description {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #777;
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.products-section {
+  padding: 110px 6vw 130px;
+  scroll-margin-top: 78px;
+}
+
+.products-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.products-header h2 {
+  margin: 12px 0 0;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 70px 35px;
+
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.products-message {
+  text-align: center;
+  color: #777;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .by-design-hero {
+    min-height: calc(100vh - 70px);
+  }
+
+  .by-design-hero-content {
+    width: min(600px, 88%);
+  }
+
+  .by-design-hero h1 {
+    font-size: clamp(2.8rem, 9vw, 4.5rem);
+  }
+
+  .hero-description {
+    max-width: 430px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 560px) {
+  .by-design-hero {
+    min-height: calc(100svh - 65px);
+  }
+
+  .by-design-hero-image {
+    object-position: center;
+  }
+
+  .by-design-hero-overlay {
+    background: rgba(0, 0, 0, 0.38);
+  }
+
+  .by-design-hero-content {
+    width: 88%;
+  }
+
+  .by-design-hero .eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+  }
+
+  .by-design-hero h1 {
+    font-size: clamp(2.5rem, 12vw, 3.8rem);
+  }
+
+  .hero-description {
+    max-width: 340px;
+    font-size: 0.86rem;
+    line-height: 1.7;
+  }
+
+  .explore-button {
+    margin-top: 28px;
+    padding: 12px 18px;
+    font-size: 0.68rem;
+  }
+}

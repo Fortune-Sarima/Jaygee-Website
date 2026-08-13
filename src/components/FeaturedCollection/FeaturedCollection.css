@@ -1,0 +1,90 @@
+/* ================================
+   FEATURED COLLECTION
+================================ */
+
+.featured-section {
+  padding: 90px 6%;
+}
+
+.featured-header {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.featured-header .eyebrow {
+  margin-bottom: 12px;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.featured-header h2 {
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+}
+
+.featured-header p {
+  line-height: 1.7;
+  color: #777;
+}
+
+/* THE IMPORTANT PART */
+.featured-products-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.featured-products-grid .product-card {
+  width: 100%;
+  min-width: 0;
+}
+
+
+/* ================================
+   PRODUCT GRID
+================================ */
+
+.featured-products-grid .product-image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+}
+
+.featured-products-grid .product-info {
+  padding: 18px 4px 0;
+}
+
+.featured-products-grid .product-description {
+  display: none;
+}
+
+.featured-products-grid .order-button {
+  margin-top: 15px;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+  .featured-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-section {
+    padding: 70px 5%;
+  }
+
+  .featured-products-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

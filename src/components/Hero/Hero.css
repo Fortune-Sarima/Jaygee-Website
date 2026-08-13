@@ -1,0 +1,179 @@
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+  position: relative;
+
+  width: 100%;
+  min-height: calc(100vh - 80px);
+
+  background-image: url("/public/images/hero/C1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+}
+
+/* Dark overlay */
+
+.hero-overlay {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 45%,
+    rgba(0, 0, 0, 0.1) 75%,
+    transparent 100%
+  );
+}
+
+/* Hero Content */
+
+.hero-content {
+  width: 100%;
+  max-width: 900px;
+
+  padding: 5rem 2rem;
+
+  text-align: center;
+  color: var(--white);
+}
+
+/* Small heading above main heading */
+
+.hero-eyebrow {
+  margin-bottom: 1rem;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+
+  color: var(--white);
+}
+
+/* Main heading */
+
+.hero h1 {
+  margin-bottom: 1.25rem;
+
+  font-size: clamp(3.5rem, 6vw, 6rem);
+  line-height: 1.05;
+  font-weight: 500;
+}
+
+/* Description */
+
+.hero-description {
+  max-width: 500px;
+
+  margin: 0 auto 2rem;
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Buttons */
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.hero-button {
+  padding: 0.9rem 1.5rem;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Primary button */
+
+.hero-button-primary {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.hero-button-primary:hover {
+  background-color: var(--orange);
+  color: var(--white);
+
+  transform: translateY(-2px);
+}
+
+/* Secondary button */
+
+.hero-button-secondary {
+  border: 1px solid var(--white);
+
+  color: var(--white);
+  background-color: transparent;
+}
+
+.hero-button-secondary:hover {
+  background-color: var(--white);
+  color: var(--black);
+
+  transform: translateY(-2px);
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: calc(100vh - 75px);
+
+    background-position: center;
+  }
+
+  .hero-overlay {
+    min-height: calc(100vh - 75px);
+
+    align-items: flex-end;
+  }
+
+  .hero-content {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.7rem;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .hero-button {
+    width: 100%;
+    text-align: center;
+  }
+}
