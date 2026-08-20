@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Jaygee-Website/static/css/main.039ae765.css",
+    "main.js": "/Jaygee-Website/static/js/main.c902d4b0.js",
+    "static/media/R1 (2).jpg": "/Jaygee-Website/static/media/R1 (2).58b7620403d931cc4010.jpg",
+    "static/media/C1.jpg": "/Jaygee-Website/static/media/C1.e5fef3ae388a493b0b75.jpg",
+    "static/media/C2 (2).jpg": "/Jaygee-Website/static/media/C2 (2).186c06cddff347929e12.jpg",
+    "index.html": "/Jaygee-Website/index.html",
+    "main.039ae765.css.map": "/Jaygee-Website/static/css/main.039ae765.css.map",
+    "main.c902d4b0.js.map": "/Jaygee-Website/static/js/main.c902d4b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.039ae765.css",
+    "static/js/main.c902d4b0.js"
+  ]
+}
