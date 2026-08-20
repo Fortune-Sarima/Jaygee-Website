@@ -179,6 +179,43 @@
   color: #777;
 }
 
+/* .by-design-instagram {
+  padding: 100px 6%;
+  text-align: center;
+  background: #f7f4f2;
+}
+
+.by-design-instagram h2 {
+  margin: 12px 0 18px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+}
+
+.by-design-instagram p:not(.eyebrow) {
+  max-width: 550px;
+  margin: 0 auto 30px;
+  color: #777;
+  line-height: 1.7;
+}
+
+.instagram-button {
+  display: inline-block;
+  padding: 13px 28px;
+  border: 1px solid #222;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.instagram-button:hover {
+  background: transparent;
+  color: #222;
+} */
+
 /* =========================
    TABLET
 ========================= */

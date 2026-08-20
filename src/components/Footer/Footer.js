@@ -59,7 +59,7 @@ function Footer() {
           <div className="footer-socials">
 
             <a
-              href="https://instagram.com/"
+              href="https://instagram.com/jaygee_couture?igsh=MWJING94aTg4MGNwbg%3D%3D&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"

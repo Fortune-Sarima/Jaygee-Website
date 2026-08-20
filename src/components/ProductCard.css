@@ -2,6 +2,23 @@
   min-width: 0;
 }
 
+.product-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.product-actions .order-button {
+  flex: 1;
+  width: auto;
+  margin-top: 0;
+  padding: 11px 12px;
+
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
 .product-image {
   position: relative;
   width: 100%;
@@ -125,6 +142,17 @@
   color: #999;
 }
 
+.instagram-order-button {
+  background: transparent !important;
+  color: #222 !important;
+  border: 1px solid #222 !important;
+}
+
+.instagram-order-button:hover {
+  background: #222 !important;
+  color: #fff !important;
+}
+
 .order-button {
   width: 100%;
   margin-top: 22px;
@@ -145,6 +173,8 @@
     background 0.3s ease,
     color 0.3s ease;
 }
+
+
 
 .order-button:hover {
   background: transparent;

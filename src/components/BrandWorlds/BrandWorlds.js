@@ -39,7 +39,7 @@ function BrandWorlds() {
                 specifically for you.
               </p>
 
-              <a href="/couture">
+              <a href="#couture">
                 Explore Couture →
               </a>
 

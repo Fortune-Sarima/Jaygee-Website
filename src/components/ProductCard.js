@@ -94,16 +94,29 @@ function ProductCard({ product }) {
 
         </div>
 
+      <div className="product-actions">
         <button
           type="button"
           className="order-button"
           onClick={handleOrder}
           disabled={!product.Available}
         >
-          {product.Available
-            ? 'Order on WhatsApp'
-            : 'Currently Unavailable'}
+          {product.Available ? 'WhatsApp' : 'Unavailable'}
         </button>
+
+        {product.InstagramLink && (
+          <a
+            href={product.InstagramLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="order-button instagram-order-button"
+          >
+            Instagram
+          </a>
+        )}
+      </div>
+
+
 
       </div>
     </article>
